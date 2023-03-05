@@ -1,0 +1,14 @@
+#-*-sh-*-
+
+tput reset
+
+flags="-g -z execstack -fno-stack-protector"
+
+files="main.c aes.c"
+
+if gcc $files -lcrypto; then
+    echo -e "\n\n  compile hoe geche\n\n";
+    ./a.out
+else
+    echo -e "\n\n  hocche na\n\n";
+fi

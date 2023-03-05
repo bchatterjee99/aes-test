@@ -1,0 +1,23 @@
+file="harry-potter"
+mode="ofb"
+./a.out $file.txt $mode
+./plot "$file-$mode-correct-key" "count-correct-key.dat" 0 100000
+gnuplot generated-script
+cp image.png 1.png
+./plot "$file-$mode-random-key" "count-random-key.dat" 0 5000
+gnuplot generated-script
+cp image.png 2.png
+montage 1.png 2.png -tile 2x1 -geometry +0+0 decryption-$file-$mode.png
+
+
+file="lotr"
+mode="ofb"
+./a.out $file.txt $mode
+./plot "$file-$mode-correct-key" "count-correct-key.dat" 0 800000
+gnuplot generated-script
+cp image.png 1.png
+./plot "$file-$mode-random-key" "count-random-key.dat" 0 24000
+gnuplot generated-script
+cp image.png 2.png
+montage 1.png 2.png -tile 2x1 -geometry +0+0 decryption-$file-$mode.png
+

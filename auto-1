@@ -1,0 +1,172 @@
+#-*-sh-*-
+./keygen
+#key 1 mode cbc
+key="key-1"
+mode="cbc"
+# harry-potter-1
+./encrypt harry-potter.txt $mode
+./plot harry-potter-$key-$mode 200 3500
+gnuplot generated-script
+cp image.png harry-potter-$key-$mode.png
+# dictionary
+./encrypt lotr.txt $mode
+./plot lotr-$key-$mode 7000 17000
+gnuplot generated-script
+cp image.png lotr-$key-$mode.png
+# join
+montage harry-potter-$key-$mode.png lotr-$key-$mode.png -tile 2x1 -geometry +0+0 comp-$key-$mode.png
+echo -e "\n\n $key $mode hoe geche\n\n"
+#key 1 mode ofb
+key="key-1"
+mode="ofb"
+# harry-potter-1
+./encrypt harry-potter.txt $mode
+./plot harry-potter-$key-$mode 200 3500
+gnuplot generated-script
+cp image.png harry-potter-$key-$mode.png
+# dictionary
+./encrypt lotr.txt $mode
+./plot lotr-$key-$mode 7000 17000
+gnuplot generated-script
+cp image.png lotr-$key-$mode.png
+# join
+montage harry-potter-$key-$mode.png lotr-$key-$mode.png -tile 2x1 -geometry +0+0 comp-$key-$mode.png
+echo -e "\n\n $key $mode hoe geche\n\n"
+
+./keygen
+# key 2 mode cbc
+key="key-2"
+mode="cbc"
+# harry-potter-1
+./encrypt harry-potter.txt $mode
+./plot harry-potter-$key-$mode 200 3500
+gnuplot generated-script
+cp image.png harry-potter-$key-$mode.png
+# dictionary
+./encrypt lotr.txt $mode
+./plot lotr-$key-$mode 7000 17000
+gnuplot generated-script
+cp image.png lotr-$key-$mode.png
+# join
+montage harry-potter-$key-$mode.png lotr-$key-$mode.png -tile 2x1 -geometry +0+0 comp-$key-$mode.png
+echo -e "\n\n $key $mode hoe geche\n\n"
+# key 2 mode ofb
+key="key-2"
+mode="ofb"
+# harry-potter-1
+./encrypt harry-potter.txt $mode
+./plot harry-potter-$key-$mode 200 3500
+gnuplot generated-script
+cp image.png harry-potter-$key-$mode.png
+# dictionary
+./encrypt lotr.txt $mode
+./plot lotr-$key-$mode 7000 17000
+gnuplot generated-script
+cp image.png lotr-$key-$mode.png
+# join
+montage harry-potter-$key-$mode.png lotr-$key-$mode.png -tile 2x1 -geometry +0+0 comp-$key-$mode.png
+echo -e "\n\n $key $mode hoe geche\n\n"
+
+
+./keygen
+# key 3 mode cbc
+key="key-3"
+mode="cbc"
+# harry-potter-1
+./encrypt harry-potter.txt $mode
+./plot harry-potter-$key-$mode 200 3500
+gnuplot generated-script
+cp image.png harry-potter-$key-$mode.png
+# dictionary
+./encrypt lotr.txt $mode
+./plot lotr-$key-$mode 7000 17000
+gnuplot generated-script
+cp image.png lotr-$key-$mode.png
+# join
+montage harry-potter-$key-$mode.png lotr-$key-$mode.png -tile 2x1 -geometry +0+0 comp-$key-$mode.png
+echo -e "\n\n $key $mode hoe geche\n\n"
+# key 3 mode ofb
+key="key-3"
+mode="ofb"
+# harry-potter-1
+./encrypt harry-potter.txt $mode
+./plot harry-potter-$key-$mode 200 3500
+gnuplot generated-script
+cp image.png harry-potter-$key-$mode.png
+# dictionary
+./encrypt lotr.txt $mode
+./plot lotr-$key-$mode 7000 17000
+gnuplot generated-script
+cp image.png lotr-$key-$mode.png
+# join
+montage harry-potter-$key-$mode.png lotr-$key-$mode.png -tile 2x1 -geometry +0+0 comp-$key-$mode.png
+echo -e "\n\n $key $mode hoe geche\n\n"
+
+./keygen
+# key 4 mode cbc
+key="key-4"
+mode="cbc"
+# harry-potter-1
+./encrypt harry-potter.txt $mode
+./plot harry-potter-$key-$mode 200 3500
+gnuplot generated-script
+cp image.png harry-potter-$key-$mode.png
+# dictionary
+./encrypt lotr.txt $mode
+./plot lotr-$key-$mode 7000 17000
+gnuplot generated-script
+cp image.png lotr-$key-$mode.png
+# join
+montage harry-potter-$key-$mode.png lotr-$key-$mode.png -tile 2x1 -geometry +0+0 comp-$key-$mode.png
+echo -e "\n\n $key $mode hoe geche\n\n"
+# key 4 mode ofb
+key="key-4"
+mode="ofb"
+# harry-potter-1
+./encrypt harry-potter.txt $mode
+./plot harry-potter-$key-$mode 200 3500
+gnuplot generated-script
+cp image.png harry-potter-$key-$mode.png
+# dictionary
+./encrypt lotr.txt $mode
+./plot lotr-$key-$mode 7000 17000
+gnuplot generated-script
+cp image.png lotr-$key-$mode.png
+# join
+montage harry-potter-$key-$mode.png lotr-$key-$mode.png -tile 2x1 -geometry +0+0 comp-$key-$mode.png
+echo -e "\n\n $key $mode hoe geche\n\n"
+
+
+./keygen
+# key 5 mode cbc
+key="key-5"
+mode="cbc"
+# harry-potter-1
+./encrypt harry-potter.txt $mode
+./plot harry-potter-$key-$mode 200 3500
+gnuplot generated-script
+cp image.png harry-potter-$key-$mode.png
+# dictionary
+./encrypt lotr.txt $mode
+./plot lotr-$key-$mode 7000 17000
+gnuplot generated-script
+cp image.png lotr-$key-$mode.png
+# join
+montage harry-potter-$key-$mode.png lotr-$key-$mode.png -tile 2x1 -geometry +0+0 comp-$key-$mode.png
+echo -e "\n\n $key $mode hoe geche\n\n"
+# key 5 mode ofb
+key="key-5"
+mode="ofb"
+# harry-potter-1
+./encrypt harry-potter.txt $mode
+./plot harry-potter-$key-$mode 200 3500
+gnuplot generated-script
+cp image.png harry-potter-$key-$mode.png
+# dictionary
+./encrypt lotr.txt $mode
+./plot lotr-$key-$mode 7000 17000
+gnuplot generated-script
+cp image.png lotr-$key-$mode.png
+# join
+montage harry-potter-$key-$mode.png lotr-$key-$mode.png -tile 2x1 -geometry +0+0 comp-$key-$mode.png
+echo -e "\n\n $key $mode hoe geche\n\n"
